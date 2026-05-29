@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TERMINAL X ADMIN</title>
+
+<link rel="stylesheet" href="css/chat.css">
+
+<script src="js/chat.js"></script>
+
+<style>
+body{
+    background:#0b1020;
+    color:white;
+    font-family:Arial;
+    padding:20px;
+}
+
+.panel{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#00ffe1;
+}
+
+.user,
+.complaint{
+    background:#1f2937;
+    padding:10px;
+    border-radius:10px;
+    margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>TERMINAL X ADMIN PANEL ⚡</h1>
+
+<div class="panel">
+
+<h2>Registered Users</h2>
+
+<div id="usersList"></div>
+
+</div>
+
+<div class="panel">
+
+<h2>User Complaints</h2>
+
+<div id="complaintsList"></div>
+
+</div>
+
+<script>
+
+loadUsers();
+loadComplaints();
+
+</script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-// Firebase Imports
+// Firebase SDKs
 import { initializeApp }
 
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -15,24 +15,22 @@ from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 // Firebase Config
 const firebaseConfig = {
 
-  apiKey: "AIzaSyAtg7n1o0xTUrGFi1rnPIJxqE7t1yKKixc",
+apiKey: "AIzaSyAtg7n1o0xTUrGFi1rnPIJxqE7t1yKKixc",
 
-  authDomain: "terminal--x.firebaseapp.com",
+authDomain: "terminal--x.firebaseapp.com",
 
-  projectId: "terminal--x",
+projectId: "terminal--x",
 
-  storageBucket: "terminal--x.firebasestorage.app",
+storageBucket: "terminal--x.firebasestorage.app",
 
-  messagingSenderId: "891026994920",
+messagingSenderId: "891026994920",
 
-  appId: "1:891026994920:web:6de621572bc0753f76bb5d",
-
-  measurementId: "G-W85M7NEZFG"
+appId: "1:891026994920:web:6de621572bc0753f76bb5d"
 
 };
 
 
-// Initialize Firebase
+// Initialize App
 const app = initializeApp(firebaseConfig);
 
 
@@ -46,7 +44,6 @@ const db = getFirestore(app);
 export {
 
 auth,
-
 db
 
 };

@@ -1,1 +1,202 @@
+/* =========================
+TERMINAL X
+FUTURISTIC UI
+========================= */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#050816;
+color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+
+}
+
+/* =========================
+AUTH CONTAINER
+========================= */
+
+.auth-container{
+
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+
+}
+
+.auth-box{
+
+width:100%;
+max-width:400px;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,0.1);
+
+padding:40px 25px;
+
+border-radius:25px;
+
+box-shadow:
+0 0 30px rgba(0,255,255,0.15);
+
+text-align:center;
+
+}
+
+/* =========================
+LOGO
+========================= */
+
+.logo{
+
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+
+border:2px solid cyan;
+
+}
+
+/* =========================
+TITLE
+========================= */
+
+h1{
+
+font-size:35px;
+margin-bottom:10px;
+color:cyan;
+letter-spacing:2px;
+
+}
+
+.subtitle{
+
+color:#aaa;
+margin-bottom:30px;
+font-size:15px;
+
+}
+
+/* =========================
+INPUTS
+========================= */
+
+input{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:14px;
+
+background:rgba(255,255,255,0.08);
+
+color:white;
+
+font-size:15px;
+
+}
+
+input::placeholder{
+
+color:#999;
+
+}
+
+/* =========================
+BUTTON
+========================= */
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:14px;
+
+background:cyan;
+
+color:black;
+
+font-weight:bold;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.03);
+
+}
+
+/* =========================
+BOTTOM TEXT
+========================= */
+
+.switch-text{
+
+margin-top:20px;
+font-size:14px;
+color:#aaa;
+
+}
+
+.switch-text a{
+
+color:cyan;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:500px){
+
+.auth-box{
+
+padding:30px 20px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+}

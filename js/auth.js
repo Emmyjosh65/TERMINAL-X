@@ -34,3 +34,26 @@ function logout() {
         window.location.href = "login.html";
     });
 }
+// ADMIN LOGIN
+function adminLogin() {
+
+    const username = document.getElementById("adminUsername").value;
+    const password = document.getElementById("adminPassword").value;
+
+    // ADMIN DETAILS
+    const adminUser = "ADMIN1";
+    const adminPass = "TCHAT123";
+
+    if(username === adminUser && password === adminPass){
+
+        alert("Admin Login Successful");
+
+        // Redirect admin
+        window.location.href = "chat.html";
+
+    } else {
+
+        alert("Invalid Admin Credentials");
+
+    }
+}

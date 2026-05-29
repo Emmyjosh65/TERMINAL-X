@@ -3,7 +3,9 @@ import {
 auth,
 db
 
-} from "./firebase.js";
+}
+
+from "./firebase.js";
 
 import {
 
@@ -19,7 +21,6 @@ from
 
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-
 import {
 
 doc,
@@ -30,6 +31,8 @@ setDoc
 from
 
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
 
 
 // SIGNUP
@@ -59,7 +62,7 @@ password
 const user = userCredential.user;
 
 
-// SAVE USER
+// SAVE USER INFO
 await setDoc(
 
 doc(db,"users",user.uid),
@@ -74,8 +77,8 @@ uid:user.uid
 
 );
 
-alert("Signup Successful");
 
+alert("Account Created Successfully");
 
 window.location.href =
 "chat.html";
@@ -84,11 +87,14 @@ window.location.href =
 
 catch(error){
 
+console.error(error);
+
 alert(error.message);
 
 }
 
 };
+
 
 
 
@@ -114,7 +120,6 @@ password
 
 alert("Login Successful");
 
-
 window.location.href =
 "chat.html";
 
@@ -122,11 +127,14 @@ window.location.href =
 
 catch(error){
 
+console.error(error);
+
 alert(error.message);
 
 }
 
 };
+
 
 
 
@@ -160,8 +168,6 @@ username === "ADMIN1" &&
 password === "TCHAT123"
 
 ){
-
-alert("Admin Access Granted");
 
 window.location.href =
 "admin.html";

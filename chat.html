@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TERMINAL X CHAT</title>
+
+<link rel="stylesheet" href="css/chat.css">
+
+<script src="js/chat.js"></script>
+<script src="js/ui.js"></script>
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>TERMINAL X ⚡</h2>
+
+        <hr>
+
+        <h3>Chats</h3>
+
+        <div class="message">
+            Daniel
+        </div>
+
+        <div class="message">
+            Jessica
+        </div>
+
+        <div class="message">
+            Michael
+        </div>
+
+        <br>
+
+        <h3>Status</h3>
+
+        <div class="message">
+            No status updates
+        </div>
+
+        <br>
+
+        <h3>Channels</h3>
+
+        <div class="message">
+            TERMINAL NEWS
+        </div>
+
+        <div class="message">
+            TECH WORLD
+        </div>
+
+        <br>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+
+    <!-- CHAT AREA -->
+
+    <div class="chat-area">
+
+        <!-- TOP BAR -->
+
+        <div style="
+            background:#111827;
+            padding:15px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        ">
+
+            <div>
+
+                <strong>TERMINAL X BOT</strong>
+
+                <br>
+
+                <small style="color:#00ff99;">
+                    Online
+                </small>
+
+            </div>
+
+            <div>
+
+                📞 🎥 ⋮
+
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGES -->
+
+        <div class="messages" id="messages">
+
+            <div class="message">
+                Welcome to TERMINAL X ⚡
+            </div>
+
+            <div class="message">
+                Hello 👋
+            </div>
+
+        </div>
+
+
+        <!-- INPUT -->
+
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message..."
+            >
+
+            <button onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
